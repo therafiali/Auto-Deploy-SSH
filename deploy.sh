@@ -6,6 +6,10 @@ echo "Starting deployment..."
 cd /home/ubuntu/internal-app/internal-app2/my-remix-app || exit 
 
 # Install dependencies
+echo "Pulling latest code..."
+git pull origin main
+
+# Install dependencies
 echo "Running npm install..."
 npm i
 
